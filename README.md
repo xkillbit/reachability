@@ -21,7 +21,7 @@ Are the target ranges reachable? If so how many in each range? If that isn't eno
 # EASYMODE - COPY/PASTA (into your terminal):
 [WARNING : DO NOT RUN ON A CORP Attached Network unless you are meaning too. ]
 This command will download the tool, set it up, and run it on the first network interface you are attached to as a /24.
-> sudo git clone https://github.com/jsmit260/reachability.git && cd reachability&&sudo chmod 755 setup.sh && sudo ./setup.sh && echo ' ' && echo ' '&& echo '**Create a file named targets.list or whatever, fill it with line seperate IP ranges in CIDR notation such as 192.168.0.0/24 then run $>./ireach.py to continue life on easy street**'
+> sudo git clone https://github.com/xkillbit/reachability.git && cd reachability&&sudo chmod 755 setup.sh && sudo ./setup.sh && echo ' ' && echo ' '&& echo '**Create a file named targets.list or whatever, fill it with line seperate IP ranges in CIDR notation such as 192.168.0.0/24 then run $>./ireach.py to continue life on easy street**'
 
 # MANUAL MODE:
 
