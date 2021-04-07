@@ -1,6 +1,7 @@
 #! /bin/bash
 echo '--------------THIS MUST BE RUN AS ROOT--------------'
 apt update
+apt install masscan
 apt install -y sed
 apt install -y python3
 apt install -y python3-pip
@@ -10,6 +11,7 @@ pip3 install tabulate
 pip3 install ipaddress
 pip3 install pandas
 pip3 install PyInquirer
+updatedb
 sed -i 's/logger.debug/#&/' $(locate masscan.py)
 chmod 755 reachy.py
 chmod 755 ireachy.py
