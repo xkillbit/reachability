@@ -37,6 +37,7 @@ This command will download the tool, set it up, and run it on the first network 
 
 Create a line seperated list of target IP Ranges (IE: x.x.x.x/24).
 > echo "127.0.0.1/32" >> targets.list
+> 
 > echo "192.168.1.1/32" >> targets.list
 
 Fire at will:
