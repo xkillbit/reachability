@@ -24,12 +24,8 @@ def get_ranges():
     string_ranges=[]
     f = open(sys.argv[1], 'r')
     for eachRange in f:
-        #ok = regex.match('\A(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\/(8|16|20|21|22|23|24|32)$', eachRange)
-        #if not ok:
-        #    print("[ERROR] One of the given IP Ranges is invalid. Please scrub the file and try again. [ERROR]")
-        #    break
         string_ranges.append(eachRange.strip("\s\n\t\r"))
-        list_of_ip_ranges.append(ipaddress.ip_network(eachRange.strip("\s\n\t\r")))
+        list_of_ip_ranges.append(ipaddress.ip_network(eachRange.strip("\s\n\t\r",False)))
 
     f.close()
     return [string_ranges,list_of_ip_ranges]
