@@ -25,7 +25,7 @@ This command will download the tool, set it up, and run it on the first network 
 
 # MANUAL MODE:
 
->sudo git clone https://github.com/jsmit260/reachability.git
+>sudo git clone https://github.com/xkillbit/reachability.git
 
 >cd reachability
 
