@@ -25,7 +25,7 @@ def get_ranges():
     f = open(sys.argv[1], 'r')
     for eachRange in f:
         string_ranges.append(eachRange.strip("\s\n\t\r"))
-        list_of_ip_ranges.append(ipaddress.ip_network(eachRange.strip("\s\n\t\r",False)))
+        list_of_ip_ranges.append(ipaddress.ip_network(eachRange.strip("\s\n\t\r"),False))
 
     f.close()
     return [string_ranges,list_of_ip_ranges]
