@@ -67,12 +67,15 @@ df = pd.Series(sorted_resultz)
 
 # Convert all values in range results to strings for printing purposes
 for k,v in range_resultz.items():
-    range_resultz[k]=str(v)
+    print("THESE ARE KEY VALUE PAIRS IN RANGE_RESULTSZ:> {}:{}".format(k,v))
+    listofV= [v]
+    range_resultz[k]=listofV
     
-#print(range_resultz)
-df2 = pd.Series(range_resultz)
-print(tabulate(df2.sort_values(),headers=('IP Range', 'Live Nodes'),tablefmt='grid'))
-content2 =tabulate(df2.sort_values(),headers=('IP Range','Live Nodes'),tablefmt='tsv')
+sorted_range_resultz = OrderedDict(range_resultz)
+
+df2 = pd.Series(sorted_range_resultz)
+print(tabulate(df2,headers=('IP Range', 'Live Nodes'),tablefmt='grid'))
+content2 =tabulate(df2,headers=('IP Range','Live Nodes'),tablefmt='tsv')
 
  
 
