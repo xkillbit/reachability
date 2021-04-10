@@ -67,7 +67,6 @@ df = pd.Series(sorted_resultz)
 
 # Convert all values in range results to strings for printing purposes
 for k,v in range_resultz.items():
-    print("THESE ARE KEY VALUE PAIRS IN RANGE_RESULTSZ:> {}:{}".format(k,v))
     listofV= [v]
     range_resultz[k]=listofV
     
