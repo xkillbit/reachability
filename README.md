@@ -10,6 +10,7 @@ THIS IS PYTHON WRAPPED AROUND MASSCAN (https://github.com/robertdavidgraham/mass
 These scripts assume you are on a debian linux distro and have internet access.
 
 #Questions the script answers?
+
 Are the target ranges reachable? If so how many in each range? If that isn't enough, what IP addresses are responding an on which ports?
 
 #Scenerios
