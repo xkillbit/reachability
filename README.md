@@ -25,15 +25,15 @@ This command will download the tool, set it up, and run it on the first network 
 > sudo git clone https://github.com/xkillbit/reachability.git && cd reachability&&sudo chmod 755 setup.sh && sudo ./setup.sh && echo ' ' && echo ' '&& echo '**Create a file named targets.list (or whatever you would like to name the file), fill it with line seperate IP ranges in CIDR notation such as 192.168.0.0/24 then run $>./ireach.py to continue life on easy street**'
 
 # MANUAL MODE:
+```
+sudo git clone https://github.com/xkillbit/reachability.git
 
->sudo git clone https://github.com/xkillbit/reachability.git
+cd reachability
 
->cd reachability
+sudo chmod 755 setup.sh
 
->sudo chmod 755 setup.sh
-
-> sudo ./setup.sh
-
+ sudo ./setup.sh
+```
 (This script makes sure you have everything you need to run reachy.py)
 
 Create a line seperated list of target IP Ranges (IE: x.x.x.x/24).
