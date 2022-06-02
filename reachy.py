@@ -73,7 +73,7 @@ for k,v in range_resultz.items():
 sorted_range_resultz = OrderedDict(range_resultz)
 
 df2 = pd.Series(sorted_range_resultz)
-print(tabulate(df2,headers=('IP Range', 'Live Nodes'),tablefmt='grid'))
+print(tabulate(df2.sort_values('1'),headers=('IP Range', 'Live Nodes'),tablefmt='grid'))
 content2 =tabulate(df2,headers=('IP Range','Live Nodes'),tablefmt='tsv')
 
  
