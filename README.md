@@ -41,8 +41,8 @@ Create a line seperated list of target IP Ranges (IE: x.x.x.x/24).
 > 
 > echo "192.168.1.1/32" >> targets.list
 
-Fire at will:
->sudo ./reachy.py targets.list
+Fire at will options are positional and speed is optional as it defaults to slow:
+>sudo ./reachy.py targets.list [speed_in_packets_per_second]
 
 
 
