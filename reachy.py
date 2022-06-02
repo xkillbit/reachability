@@ -39,11 +39,10 @@ nm = masscan.PortScanner()
 # SCAN TOP 100 Ports
 #Check if user passes a rate. If no rate then DEFAULT SCAN RATE IS SET TO 10K/PacketsPerSecond
 if len(sys.argv) == 3:
-    nm.scan(str(my_ranges[0]).strip("[]"),arguments="-e ens160 --top-ports 10 --max-rate"+' '+str(sys.argv[2]))
+    nm.scan(str(my_ranges[0]).strip("[]"),arguments="-e eth0 --top-ports 10 --max-rate"+' '+str(sys.argv[2]))
 #if rate is NOT given by user then use default 10k PPS
 else:
-    M
-    nm.scan(str(my_ranges[0]).strip("[]"),arguments='-e ens160 --top-ports 10 --max-rate 100')
+    nm.scan(str(my_ranges[0]).strip("[]"),arguments='-e eth0 --top-ports 10 --max-rate 100')
 
 
 #initalize  counts of each value to zero in range_resultz dict
