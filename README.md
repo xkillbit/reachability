@@ -1,9 +1,8 @@
 # reachability
-THIS IS PYTHON WRAPPED AROUND MASSCAN
+
 # -- START DISCLAIMER --
 
 # USE AT OWN RISK (with permission from network owner)
-
 THIS IS PYTHON WRAPPED AROUND MASSCAN (https://github.com/robertdavidgraham/masscan)
 # -- END DISCLAIMER--
 
@@ -22,10 +21,17 @@ Are the target ranges reachable? If so how many in each range? If that isn't eno
 # EASYMODE - COPY/PASTA (into your terminal):
 [WARNING : DO NOT RUN ON A CORP Attached Network unless you are meaning too. ]
 This command will download the tool, set it up, and run it on the first network interface you are attached to as a /24.
-> sudo git clone https://github.com/xkillbit/reachability.git && cd reachability&&sudo chmod 755 setup.sh && sudo ./setup.sh && echo ' ' && echo ' '&& echo '**Create a file named targets.list (or whatever you would like to name the file), fill it with line seperate IP ranges in CIDR notation such as 192.168.0.0/24 then run $>./ireach.py to continue life on easy street**'
+```bash
+sudo git clone https://github.com/xkillbit/reachability.git && cd reachability&&sudo chmod 755 setup.sh && sudo ./setup.sh && echo ' ' && echo ' '&& echo '**Create a file named targets.list'
+```
+Fill the targets.list file with line seperated IP ranges in CIDR notation such as 192.168.0.0/24 then run 
+```bash
+./ireachy.py
+```
+### ireachy is an interactive script that will ensure you are entering all the requirements to run the tool
 
 # MANUAL MODE:
-```
+```bash
 sudo git clone https://github.com/xkillbit/reachability.git
 
 cd reachability
@@ -37,13 +43,15 @@ sudo chmod 755 setup.sh
 (This script makes sure you have everything you need to run reachy.py)
 
 Create a line seperated list of target IP Ranges (IE: x.x.x.x/24).
-> echo "127.0.0.1/32" >> targets.list
-> 
-> echo "192.168.1.1/32" >> targets.list
-
+```bash
+echo "127.0.0.1/32" >> targets.list
+ 
+echo "192.168.1.1/32" >> targets.list
+```
 Fire at will options are positional and speed is optional as it defaults to slow:
->sudo ./reachy.py targets.list [speed_in_packets_per_second]
-
+```bash
+sudo ./reachy.py targets.list [speed_in_packets_per_second]
+```
 
 
 
