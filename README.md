@@ -2,9 +2,9 @@
 
 # -- START DISCLAIMER --
 
-# USE AT OWN RISK (with permission from network owner)
+### USE AT OWN RISK (with permission from the network owner)
 THIS IS PYTHON WRAPPED AROUND MASSCAN (https://github.com/robertdavidgraham/masscan)
-# -- END DISCLAIMER--
+### -- END DISCLAIMER--
 
 These scripts assume you are on a debian linux distro and have internet access.
 
